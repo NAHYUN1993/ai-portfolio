@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Artist Portfolio</title>
+  <meta name="description" content="AI 아티스트 포트폴리오 - AI 영상 및 AI 이미지 전문 크리에이터">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ═══ Navigation ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="nav-logo">LEE NA HYUN</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ Hero Section ═══ -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">AI Artist & Creator</div>
+      <h1>
+        Lee Na Hyun<br>
+        <span class="gradient-text">AI Artist</span>
+      </h1>
+      <p class="hero-subtitle">
+        AI 기술을 활용하여 영상과 이미지를 제작하는 크리에이터입니다.<br>
+        광고, 단편영화, 제품 홍보부터 컨셉 아트까지 — AI로 새로운 비주얼을 만듭니다.
+      </p>
+      <div class="hero-cta">
+        <a href="#works" class="btn btn-primary">작품 보기 →</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══ About Section ═══ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">About</span>
+        <h2 class="section-title">AI 아티스트 소개</h2>
+      </div>
+      <div>
+        <div class="about-content reveal reveal-delay-1">
+          <h3>안녕하세요,<br>AI 크리에이터 이나현입니다.</h3>
+          <p>
+            방송 현장의 조연출과 자막 디자이너로 시작해, 중소기업 인하우스 영상 PD로서 자사 유튜브·인스타그램 콘텐츠의 기획부터 최종 편집까지 영상 제작 전 공정을 체득했습니다. 현재는 이 실전 경험 위에 AI 기술을 결합하여 '사람이 설계하고, AI가 확장하는' 하이브리드 크리에이티브 워크플로를 구축하고 있습니다.
+          </p>
+          <p>
+            AI 이미지·영상 생성, 자동화 파이프라인 설계, 프롬프트 엔지니어링을 핵심 역량으로 삼아 브랜드 아이덴티티에 맞는 상업적 완성도 높은 콘텐츠를 제작합니다. 특히 AI 결과물의 고질적 한계(텍스트 왜곡, 일관성 부재 등)를 기술적으로 해결하는 문제 해결형 크리에이터를 지향합니다.
+          </p>
+          <div class="about-tools">
+            <h4>주요 사용 도구</h4>
+            <div class="tools-grid">
+              <span class="tool-chip">ComfyUI</span>
+              <span class="tool-chip">Nano Banana</span>
+              <span class="tool-chip">Veo</span>
+              <span class="tool-chip">Kling</span>
+              <span class="tool-chip">Midjourney</span>
+              <span class="tool-chip">ElevenLabs</span>
+              <span class="tool-chip">Suno AI</span>
+              <span class="tool-chip">Higgsfield</span>
+              <span class="tool-chip">Antigravity</span>
+              <span class="tool-chip">Obsidian</span>
+              <span class="tool-chip">NotebookLM</span>
+              <span class="tool-chip">Claude</span>
+              <span class="tool-chip">Premiere Pro</span>
+              <span class="tool-chip">After Effects</span>
+              <span class="tool-chip">Photoshop</span>
+              <span class="tool-chip">Illustrator</span>
+              <span class="tool-chip">Figma</span>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Works Section ═══ -->
+  <section class="section" id="works">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Works</span>
+        <h2 class="section-title">프로젝트</h2>
+        <p class="section-desc">AI 기술로 제작한 영상과 이미지 작업물입니다.</p>
+      </div>
+
+      <!-- Filter -->
+      <div class="filter-container reveal">
+        <div class="filter-main">
+          <button class="filter-btn active" data-filter="all">전체</button>
+          <button class="filter-btn" data-filter="video">🎬 AI 영상</button>
+          <button class="filter-btn" data-filter="image">🖼️ AI 이미지</button>
+        </div>
+        <div class="filter-sub" id="filterSub">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+      <!-- Works Grid -->
+      <div class="works-grid" id="worksGrid">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2026 <a href="#home">Lee Na Hyun</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ═══ Project Modal ═══ -->
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal" id="projectModal">
+    <div class="modal-close">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="닫기">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody">
+      <!-- Dynamically populated -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
