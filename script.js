@@ -1,5 +1,5 @@
 /* ========================================
-   AI Artist Portfolio - Script
+   AI Artist Portfolio - Script (Dashboard Edition)
    ======================================== */
 
 // ── Project Data ──
@@ -82,7 +82,7 @@ const projects = [
       'images/주요장면/크리스마스/크리스마스 주요장면_02.png',
       'images/주요장면/크리스마스/크리스마스 주요장면_03.png',
       'images/주요장면/크리스마스/크리스마스 주요장면_04.png',
-      'images/주요장면/크리스마스/크리스마스 주요장면_05.png',
+      'images/주요장면/크리스마스/크리스마스 주요장면_07.png',
       'images/주요장면/크리스마스/크리스마스 주요장면_06.png'
     ],
     tags: ['숏폼', '캐릭터 IP'],
@@ -90,8 +90,9 @@ const projects = [
     process: [
       { title: '캐릭터 시트 및 페르소나 구축', desc: '나노바나나를 활용해 기본 캐릭터 시트를 생성. 다양한 카메라 앵글과 표정 변화에 대응할 시각 에셋을 확보함.' },
       { title: '시즌 베리에이션 및 코스튬 적용', desc: '산타 코스튬 모티프를 적용하여 버전 변형. 캐릭터 고유의 아이덴티티를 완벽하게 유지함.' },
-      { title: 'AI 한계 극복 및 제품 합성', desc: 'ComfyUI의 qwen_image_edit 노드를 활용해 캐릭터 영역에 실제 식물 영양제 제품 이미지를 이질감 없이 자연스럽게 합성함.' },
-      { title: '모션 부여 및 편집', desc: '프리픽 Kling 모델로 영상화 및 프리미어 프로에서 편집 마무리.' }
+      { title: 'AI 한계 극복 및 제품 합성', desc: 'ComfyUI의 qwen_image_edit 노드를 활용해 캐릭터 영역에 실제 식물 영양제 제품 이미지를 이질감 없이 자연스럽게 합성함.', image: 'images/주요장면/크리스마스/작업과정_02.png' },
+      { title: '다각도 장면 일괄 생성 (Multiple Angle LoRA)', desc: 'qwen_Multiple_angle LoRA 모델을 적용하는 자체 워크플로를 설계하여, 캐릭터의 각기 다른 다양한 앵글과 장면을 한 번에 생성하는 자동화 작업을 진행함.', image: 'images/주요장면/크리스마스/작업과정_01.png' },
+      { title: '모션 부여 및 편집 마무리', desc: '프리픽 Kling 모델로 영상화 및 프리미어 프로에서 편집 마무리.' }
     ],
     toolsDetail: ['Nano Banana', 'ComfyUI', 'Freepik (Kling)', 'Premiere Pro']
   },
@@ -190,7 +191,7 @@ const projects = [
     type: 'video',
     category: 'ad',
     categoryLabel: '광고',
-    title: '[UX Visualizing] 토너패드 3-Step 직관적 사용 가이드 및 제품 브랜딩',
+    title: '토너패드 광고',
     desc: '기존 뷰티 광고의 감성적 클리셰를 배제하고, \'1mm의 빈틈도 허락하지 않는 완벽주의자\'의 시선에서 네모 패드가 얼굴 굴곡에 완벽히 밀착되는 시각적 카타르시스와 3-Step 루틴을 직관적으로 연출한 브랜드 필름.',
     thumbnail: 'images/Thumbnails/공모전_메디힐.png',
     badge: 'contest',
@@ -217,7 +218,111 @@ const projects = [
       { title: '이미지 영상화 및 마스터 편집', desc: '이미지를 프리픽 Kling 모델로 영상화. 프리미어 프로에서 컷 연결, 오디오 믹싱, 자막 작업을 진행함.' }
     ],
     toolsDetail: ['Midjourney', 'Nano Banana', 'ComfyUI', 'Freepik (Kling)', 'Photoshop', 'Premiere Pro', 'NotebookLM']
+  },
+  {
+    id: 101,
+    type: 'video',
+    category: 'ad',
+    categoryLabel: '브랜드 커머셜 숏폼',
+    title: '나노바나나 AI 기술 시연 커머셜 필름',
+    desc: '초고성능 인공지능 이미지 생성 기술인 \'나노바나나\'의 압도적인 스타일 베리에이션 능력을 직관적으로 증명하기 위한 테크 커머셜 필름.',
+    thumbnail: 'images/Thumbnails/나노바나나.png',
+    badge: 'company',
+    badgeLabel: '🏢 커머스 프로젝트',
+    tools: ['Nano Banana', 'Premiere Pro'],
+    driveId: '1UionJ84Kyz9OjvfQot6yiUt0piYegRUt',
+    orientation: 'horizontal',
+    scenes: [
+      'images/주요장면/나노바나나/%234.png',
+      'images/주요장면/나노바나나/%235.png',
+      'images/주요장면/나노바나나/%236.png',
+      'images/주요장면/나노바나나/%237.png',
+      'images/주요장면/나노바나나/%238.png',
+      'images/주요장면/나노바나나/바나나.png'
+    ],
+    tags: ['커머스', '기술 시연'],
+    brief: '초고성능 인공지능 이미지 생성 기술인 \'나노바나나\'의 압도적인 스타일 베리에이션 능력을 직관적으로 증명하기 위한 테크 커머셜 필름. 바나나를 핵심 오브제로 고정하고, 이를 중심으로 인공지능이 구현할 수 있는 무한한 화풍의 변환 과정을 속도감 있게 보여주어 기술의 혁신성과 상업적 활용 가치를 어필함.',
+    process: [
+      { title: '핵심 오브제 기반 다중 화풍 실험 기획', desc: '바나나라는 하나의 확고한 피사체를 중심으로, 인공지능이 구현할 수 있는 다양한 시각적 스타일을 실험하기 위한 스토리보드 기획. 하이엔드 전자기기 광고의 세련된 연출 문법을 차용하여, 각기 다른 화풍의 결과물들이 이질감 없이 연결되도록 구성함.' },
+      { title: '초정밀 형태 고정 프롬프트 설계', desc: '나노바나나 기술의 스타일 해석 능력과 정밀한 제어력을 시각화하는 데 집중함. 원본 바나나의 형태와 위치는 완벽하게 고정한 상태에서, 극단적으로 다른 화풍으로만 변환시키는 고난이도 프롬프트 구조를 자체 설계하여 기술의 범용성을 증명함.' },
+      { title: '고품질 에셋 기반 다이내믹 트랜지션', desc: '나노바나나 기술로 추출된 소수의 고품질 스타일 베리에이션 에셋들을 기반으로 감각적인 영상화를 진행함. 트렌디한 비트에 맞춰 매끄럽게 연결되며 변환되는 시각적 쾌감을 극대화함.' }
+    ],
+    toolsDetail: ['Nano Banana', 'Premiere Pro']
+  },
+  {
+    id: 102,
+    type: 'video',
+    category: 'ad',
+    categoryLabel: '인스타 밈 콘텐츠',
+    title: '오션아이 밈 챌린지 (AI 커버)',
+    desc: '인스타그램 바이럴 \'오션아이\' 밈을 AI 숏폼 영상으로 완벽하게 재현. 손가락의 해부학적 구조와 자연스러운 윙크 모션을 왜곡 없이 구현함.',
+    thumbnail: 'images/Thumbnails/오션아이.png',
+    badge: 'personal',
+    badgeLabel: '✨ 숏폼 프로젝트',
+    tools: ['ComfyUI', 'Kling', 'Premiere Pro'],
+    driveId: '1vkH7IVE0fJ6ya444eaZ3OcL1wX1Ak6uX',
+    orientation: 'vertical',
+    scenes: [
+      'images/주요장면/오션아이/Gemini_Generated_Image_ksq91hksq91hksq9.png',
+      'images/주요장면/오션아이/막컷_upscayl_2x_upscayl-standard-4x.png'
+    ],
+    tags: ['숏폼', '바이럴 밈'],
+    brief: '인스타그램 릴스 등에서 바이럴되는 \'오션아이(손을 모아 만든 틈 사이로 윙크하는 모습)\' 밈을 AI 생성 기술로 완벽하게 재현하여 숏폼 시청자들의 자연스러운 인게이지먼트를 유도함. AI 생성 시 가장 높은 난이도를 요구하는 \'손가락 해부학 구조\'와 \'윙크 모션\' 구현을 최우선 과제로 설정함.',
+    process: [
+      { title: '숏폼 타겟팅 기획', desc: '기존 실사 위주의 밈 챌린지 틈새에서 시각적 차별화를 주기 위해 매력적인 AI 가상 모델 기획. 스크롤을 멈추게 하는 9:16 모바일 풀사이즈 클로즈업 앵글을 설정함.' },
+      { title: '고난이도 신체 렌더링 최적화', desc: '손가락이 얽힌 형태와 눈동자를 묘사하기 위해 네거티브 프롬프트를 극도로 세밀하게 세팅함. 골격 왜곡을 방어하기 위해 특정 포즈를 강제하는 컨트롤넷(ControlNet) 기반의 뼈대 설계와 심층 리서치를 병행함.' },
+      { title: '안면 모션 및 마이크로 디테일 연출', desc: '불쾌한 골짜기 현상을 제거하고 실제 틱톡커/인플루언서의 자연스러운 움직임처럼 보이도록 후반 모션 생성 프롬프트를 최적화함.' }
+    ],
+    toolsDetail: ['ComfyUI (ControlNet)', 'Kling', 'Premiere Pro']
+  },
+  {
+    id: 103,
+    type: 'video',
+    category: 'short-film',
+    categoryLabel: 'SF 단편 영화',
+    title: '얼어붙은 아마존',
+    desc: '기후 위기로 얼어붙은 \'아마존\' 디스토피아 세계관을 배경으로, 인류 생존의 열쇠인 \'코어\'를 고치기 위한 여정을 다룬 시네마틱 SF 단편 영화.',
+    thumbnail: 'images/Thumbnails/아마존.png',
+    badge: 'personal',
+    badgeLabel: '🎬 개인 필름',
+    tools: ['Midjourney', 'Runway', 'Premiere Pro'],
+    driveId: '11i8xV-new7gxnxQ571zmbRbqTqm3P1Lf',
+    orientation: 'horizontal',
+    scenes: [
+      'images/주요장면/아마존/%2311.png',
+      'images/주요장면/아마존/%2313.png',
+      'images/주요장면/아마존/%2315.png',
+      'images/주요장면/아마존/%234.png',
+      'images/주요장면/아마존/%235.png',
+      'images/주요장면/아마존/%239.png'
+    ],
+    tags: ['SF', '디스토피아', '시네마틱'],
+    brief: '기후 위기로 인해 얼어붙어버린 \'아마존\'이라는 디스토피아적 세계관과, 인류 생존의 열쇠인 \'코어\'를 고치기 위한 여정, 그리고 이것이 모두 시뮬레이션이었다는 극적 반전을 담은 단편 영화 기획. 텍스트 프롬프트만으로 압도적인 스케일의 시네마틱 룩을 구현함.',
+    process: [
+      { title: '시네마틱 내러티브 및 극적 반전 기획', desc: '\'열대우림의 빙하기\'라는 시각적 모순을 통해 낯설고도 웅장한 디스토피아 배경을 설계함. 최후의 순간 디지털 글리치 효과와 함께 현실로 전환되는 반전 스토리보드를 밀도 있게 구성함.' },
+      { title: '프롬프트 기반 장엄한 스케일 연출', desc: 'SF 장르 특유의 스케일과 디테일 묘사를 위해, 렌즈 구경, 조명, 색감 등을 제어하는 전문적인 촬영/카메라 룩다운 프롬프트 엔지니어링 수행.' }
+    ],
+    toolsDetail: ['Midjourney', 'Runway Gen-2', 'ElevenLabs', 'Premiere Pro']
   }
+];
+
+const characterFiles = [
+  "dan_asa_A_close-up_portrait_of_the_cutest_baby_bat._Its_body__dd1a27c3-6e9e-4b9a-8b09-d0878610ecb3_1.png",
+  "dan_asa_Cute_SD_anime_style_girl_dynamic_pose_pressing_face_a_dd26f3dd-a647-47bc-816e-401dc4dedfa7_2.png",
+  "dan_asa_Full_body_shot_wide_angle_chibi_style_beautiful_Korea_4e24740f-9027-4c46-8ded-3cd0f76da14d_0.png",
+  "dan_asa_Wide_tracking_shot_dynamic_motion._A_young_girl_with__358ea8ff-8ab2-4d9a-ab40-14a7e8d9fe78_1.png",
+  "dan_asa_a_male_of_angel_--ar_34_--niji_7_19b51f0f-251c-48df-9931-f5b1f02409c7_3.png",
+  "dan_asa_chibi_style_close-up_portrait_shot_cool_korean_girl_c_be24f469-d9c1-4e36-a9ae-c8e769d2f9bf_3.png",
+  "dan_asa_chibi_style_close-up_portrait_shot_handsome_korean_bo_8ce10f33-697f-4636-b7ab-093717726913_3.png",
+  "dan_asa_chibi_style_full_body_shot_cute_korean_girl_character_48b11e05-808e-4f1b-b25e-ce265874fe87_1.png",
+  "dan_asa_chibi_style_full_body_view_cute_korean_girl_character_d65092b0-d86a-42f0-b95f-8b0ec82d6f20_3.png",
+  "dan_asa_chibi_style_medium_shot._Snowy_Korean_stone_wall_road_9198cb62-4741-4037-aaf8-c5a6e090b6d1_1.png",
+  "dan_asa_chibi_style_portrait_shot_cute_korean_girl_character__e122a4e6-4207-4010-89f9-8113d45a74e3_0.png",
+  "dan_asa_cute_and_lively_3D_animated_character_Blender_Cycles__d7f4bbc4-449e-441e-9298-38a8529e059c_2.png",
+  "dan_asa_httpss.mj.runHGcqPQ1_YV8_A_wide_shot_of_the_marshmall_21f55a88-a9f5-4e15-87c3-cb6ebaafa71a_0.png",
+  "dan_asa_httpss.mj.runV9AU0mxRykw_A_close-up_portrait_of_a_cut_95f1374d-2bea-4cec-8d51-059f63c66e8e_2.png",
+  "dan_asa_httpss.mj.runzw9cHaC2uWE_A_low_angle_shot_of_the_mars_672b6280-32ad-437f-a071-fafba61e8131_0.png",
+  "dan_asa_lose-up_of_an_old_90s_retro_handheld_virtual_pet_devi_bda324f8-ec5b-4706-b07a-b4348730e407_1.png"
 ];
 
 const conceptArtFiles = [
@@ -225,12 +330,16 @@ const conceptArtFiles = [
   "dan_asa_43_--ar_34_--profile_aak7s7r_--v_7_ca0fc045-1541-4fad-b410-635c7f3c14a2_3.png",
   "dan_asa_44_--ar_34_--profile_aak7s7r_--v_7_29add57e-eecf-4e2d-8729-d797ce48c5f6_0.png",
   "dan_asa_44_--ar_34_--profile_aak7s7r_--v_7_29add57e-eecf-4e2d-8729-d797ce48c5f6_1.png",
-  "dan_asa_7_--ar_34_--profile_aak7s7r_--v_7_4e4c5394-a791-4896-98c6-00e573cc9ad6_0.png",
-  "dan_asa_Dynamic_battle_pose_SD_magical_girl_character._Fancy__1b16abb7-78c8-450b-9af7-349e67deb3f9_1.png",
+  "dan_asa_A_cyberpunk_street_samurai_standing_in_rain_neon_city_2b87b794-9fd1-4204-8cc5-417cca4e9f3d_2.png",
+  "dan_asa_Dynamic_action_shot_of_the_Northern_Grand_Duke_in_bat_7896ddfd-1666-420f-bfeb-6032ec42cc4f_0.png",
   "dan_asa_Dynamic_chibi_style_medium_shot._The_girl_scientist_h_a2d9b045-5462-4b80-969b-62c2d3562651_3.png",
+  "dan_asa_Girl_napping_under_the_giant_tree_made_of_yellow_fold_94689d38-f1e0-4b3f-8a5a-eba92f716ed2_3.png",
+  "dan_asa_Gritty_cinematic_live-action_concert_photography_styl_b23f31f7-e09d-4118-97cc-1786e817d5c2_2.png",
+  "dan_asa_Joseon_dynasty_dark_fantasy_secret_royal_inspector_sp_e1ffe60d-7d13-4fb1-8ee4-8c708cef87e9_3.png",
   "dan_asa_Medium_shot_dynamic_interaction._3D_illustration._SD__6453d748-2b74-45bd-bd4c-b2e25d8730cc_2.png",
   "dan_asa_Wide_angle_mysterious_and_bizarre_atmosphere._3D_art__63d86714-5964-4d20-b74a-63a23dabec71_0.png",
   "dan_asa_a_woman_exiting_a_night_cafe_motion_blur_on_backgroun_582de1aa-dd57-4e57-9212-305fe0cf0ab1_0.png",
+  "dan_asa_chibi_style_full_body_shot._Dark_corner_of_the_labora_c078b8a8-3257-4ccc-b255-bca23a13036b_1.png",
   "u4162569224_An_immense_and_vast_bright_red_minimalist_living__f9ff00a1-d1a0-409a-bd5f-71bd029bb213_3.png"
 ];
 
@@ -270,6 +379,14 @@ const productImageFiles = [
 ];
 
 let idCounter = 8;
+characterFiles.forEach(file => {
+  projects.push({
+    id: idCounter++, type: 'image', category: 'character', categoryLabel: '캐릭터 일관성 도출',
+    title: 'Character Consistency', desc: '', thumbnail: `images/AI Image/character/${file}`,
+    badge: 'personal', badgeLabel: '✨ AI Image', tools: [], orientation: 'vertical',
+    scenes: [], images: [`images/AI Image/character/${file}`], tags: [], brief: '', process: [], toolsDetail: []
+  });
+});
 conceptArtFiles.forEach(file => {
   projects.push({
     id: idCounter++, type: 'image', category: 'concept-art', categoryLabel: '컨셉 아트',
@@ -295,192 +412,175 @@ productImageFiles.forEach(file => {
   });
 });
 
-// ── Sub-category definitions ──
-const subCategories = {
-  all: [],
-  video: [
-    { value: 'all-video', label: '전체 영상' },
-    { value: 'ad', label: '광고' },
-    { value: 'short-film', label: '단편 영화' },
-    { value: 'animation', label: '단편 애니메이션' },
-    { value: 'product', label: '제품 홍보' },
-    { value: 'seasonal', label: '시즌 캠페인' }
-  ],
-  image: [
-    { value: 'all-image', label: '전체 이미지' },
-    { value: 'product-image', label: '제품 이미지' },
-    { value: 'portrait', label: '인물 이미지' },
-    { value: 'concept-art', label: '컨셉 아트' }
-  ]
-};
-
-// Placeholder gradients for thumbnails
 const placeholderGradients = [
-  'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
-  'linear-gradient(135deg, #2d1b69 0%, #11998e 100%)',
-  'linear-gradient(135deg, #0c0c1d 0%, #1a237e 50%, #4a148c 100%)',
-  'linear-gradient(135deg, #1b1b2f 0%, #162447 50%, #1f4068 100%)',
-  'linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 50%, #e94560 100%)',
-  'linear-gradient(135deg, #141e30 0%, #243b55 100%)',
-  'linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)',
-  'linear-gradient(135deg, #200122 0%, #6f0000 100%)',
-  'linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #3a1c71 100%)',
-  'linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #16213e 100%)',
-  'linear-gradient(135deg, #141414 0%, #2c003e 100%)',
-  'linear-gradient(135deg, #0d1117 0%, #161b22 50%, #21262d 100%)',
-  'linear-gradient(135deg, #1e0533 0%, #110b11 50%, #0b132b 100%)',
-  'linear-gradient(135deg, #0b0b0b 0%, #1c1c3c 50%, #2d1b69 100%)'
+  'linear-gradient(135deg, #121216 0%, #1e1e24 100%)',
+  'linear-gradient(135deg, #101511 0%, #1a241c 100%)',
+  'linear-gradient(135deg, #0c1214 0%, #152226 100%)'
 ];
 
 // ── State ──
-let currentMainFilter = 'all';
-let currentSubFilter = '';
+let currentArtworkFilter = 'all-image';
 
 // ── DOM Elements ──
-const navbar = document.getElementById('navbar');
-const navLinks = document.getElementById('navLinks');
-const navToggle = document.getElementById('navToggle');
-const filterSub = document.getElementById('filterSub');
-const worksGrid = document.getElementById('worksGrid');
+const navBtns = document.querySelectorAll('.nav-btn');
+const viewSections = document.querySelectorAll('.view-section');
+
+const artworkFilterBtns = document.querySelectorAll('.filter-chip');
+
+const gridCommercial = document.getElementById('grid-commercial');
+const gridCinematic = document.getElementById('grid-cinematic');
+const gridArtwork = document.getElementById('grid-artwork');
+
 const modalBackdrop = document.getElementById('modalBackdrop');
 const projectModal = document.getElementById('projectModal');
 const modalCloseBtn = document.getElementById('modalCloseBtn');
 const modalBody = document.getElementById('modalBody');
 
-// ── Navigation ──
-// Scroll behavior
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
-  updateActiveNav();
-});
-
-// Active section highlight
-function updateActiveNav() {
-  const sections = document.querySelectorAll('section[id]');
-  const scrollPos = window.scrollY + 200;
-
-  sections.forEach(section => {
-    const top = section.offsetTop;
-    const height = section.offsetHeight;
-    const id = section.getAttribute('id');
-    const link = document.querySelector(`.nav-links a[href="#${id}"]`);
-
-    if (link) {
-      if (scrollPos >= top && scrollPos < top + height) {
-        document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-        link.classList.add('active');
-      }
-    }
-  });
+// ── Initialization ──
+function init() {
+  initNavigation();
+  initArtworkFilters();
+  renderAllViews();
 }
 
-// Mobile toggle
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
-
-// Close mobile nav on link click
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-  });
-});
-
-// ── Filter Logic ──
-function initFilters() {
-  // Main filter buttons
-  document.querySelectorAll('.filter-btn').forEach(btn => {
+// ── Navigation Logic ──
+function initNavigation() {
+  navBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      // Update Buttons
+      navBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      currentMainFilter = btn.dataset.filter;
-      currentSubFilter = '';
-      renderSubFilters();
-      renderProjects();
+
+      // Update Views
+      const targetViewId = 'view-' + btn.dataset.view;
+      viewSections.forEach(section => {
+        section.classList.remove('active');
+        if (section.id === targetViewId) {
+          section.classList.add('active');
+        }
+      });
     });
   });
 }
 
-function renderSubFilters() {
-  const subs = subCategories[currentMainFilter];
-  if (!subs || subs.length === 0) {
-    filterSub.innerHTML = '';
-    return;
-  }
-
-  filterSub.innerHTML = subs.map((sub, i) => `
-    <button class="filter-chip ${i === 0 ? 'active' : ''}" data-sub="${sub.value}">
-      ${sub.label}
-    </button>
-  `).join('');
-
-  // Set default sub filter
-  currentSubFilter = subs[0].value;
-
-  // Attach events
-  filterSub.querySelectorAll('.filter-chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      filterSub.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-      currentSubFilter = chip.dataset.sub;
-      renderProjects();
+// ── Artwork Filter Logic ──
+function initArtworkFilters() {
+  artworkFilterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      artworkFilterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentArtworkFilter = btn.dataset.sub;
+      renderArtworkView();
     });
   });
 }
 
-// ── Render Projects ──
-function renderProjects() {
-  let filtered = projects;
+// ── Render ──
+function renderAllViews() {
+  // Commercial Custom Order
+  const commercialOrder = [101, 4, 7, 3, 2, 1, 102];
+  const commercialProjects = projects
+    .filter(p => p.type === 'video' && (p.category === 'product' || p.category === 'ad' || p.category === 'seasonal'))
+    .sort((a, b) => {
+      let idxA = commercialOrder.indexOf(a.id);
+      let idxB = commercialOrder.indexOf(b.id);
+      if(idxA === -1) idxA = 999;
+      if(idxB === -1) idxB = 999;
+      return idxA - idxB;
+    });
 
-  // Main filter
-  if (currentMainFilter !== 'all') {
-    filtered = filtered.filter(p => p.type === currentMainFilter);
+  const topRow = commercialProjects.slice(0, 3);
+  const bottomRow = commercialProjects.slice(3);
+
+  gridCommercial.innerHTML = 
+    topRow.map((p, i) => createProjectCard(p, i)).join('') +
+    `<div style="grid-column: 1 / -1; width: 100%; height: 1px; margin: 10px 0; border-top: 1px dashed var(--border-subtle); display:flex; align-items:center; justify-content:center;">
+       <span style="background:var(--bg-base); padding:0 15px; color:var(--text-dim); font-size:0.75rem; letter-spacing:0.2em; font-family:var(--font-mono); transform:translateY(-50%);">VERTICAL_SHORTS</span>
+     </div>` +
+    bottomRow.map((p, i) => createProjectCard(p, i + 3)).join('');
+
+  // Cinematic
+  const cinematicProjects = projects.filter(p => p.type === 'video' && (p.category === 'short-film' || p.category === 'animation'));
+  gridCinematic.innerHTML = cinematicProjects.map((p, i) => createProjectCard(p, i)).join('');
+
+  // Artwork
+  renderArtworkView();
+
+  attachCardEvents();
+}
+
+function renderArtworkView() {
+  let artworkProjects = projects.filter(p => p.type === 'image');
+  if (currentArtworkFilter !== 'all-image') {
+    artworkProjects = artworkProjects.filter(p => p.category === currentArtworkFilter);
+  }
+  gridArtwork.innerHTML = artworkProjects.map((p, i) => createProjectCard(p, i)).join('');
+  attachCardEvents(gridArtwork); // Re-attach only for artwork due to re-render
+}
+
+function createProjectCard(project, index) {
+  const isVertical = project.orientation === 'vertical';
+  const verticalClass = isVertical ? ' vertical' : '';
+  const isVideo = project.type === 'video';
+
+  let thumbnailBg = '';
+  if (!project.thumbnail) {
+    thumbnailBg = `background: ${placeholderGradients[project.id % placeholderGradients.length]};`;
   }
 
-  // Sub filter
-  if (currentSubFilter && !currentSubFilter.startsWith('all')) {
-    filtered = filtered.filter(p => p.category === currentSubFilter);
-  }
+  // HUD Overlay content
+  const overlayContent = `
+    <div class="hud-loader">
+      <span>> INIT_LINK...</span>
+      <span>> TARGET: PRJ_${project.id}</span>
+      <span>> FORMAT: ${isVideo ? 'VIDEO' : 'IMAGE'}</span>
+      <span style="color: #fff">> [ACCESS]</span>
+    </div>
+  `;
 
-  worksGrid.innerHTML = filtered.map((project, index) => `
-    <div class="project-card reveal ${project.orientation === 'vertical' ? 'vertical' : ''}" data-id="${project.id}" style="animation-delay: ${index * 0.08}s">
-      <div class="card-thumbnail" ${project.type === 'image' ? `style="border-bottom: none; border-radius: var(--card-radius);"` : ''}>
-        <img src="${project.thumbnail || ''}" alt="${project.title}"
-             style="${!project.thumbnail ? `background: ${placeholderGradients[project.id - 1] || placeholderGradients[0]};` : ''}">
-        <div class="card-type-icon">${project.type === 'video' ? '🎬' : '🖼️'}</div>
-        <div class="card-overlay">
-          <span class="card-overlay-text">상세 보기 →</span>
-        </div>
+  let cardHTML = `
+    <div class="project-card${verticalClass}" data-id="${project.id}" style="animation-delay: ${index * 0.05}s">
+      <div class="card-thumbnail" style="${thumbnailBg}">
+        <img src="${project.thumbnail || ''}" alt="${project.title}">
+        <div class="card-overlay">${overlayContent}</div>
       </div>
-      ${project.type !== 'image' ? `
+  `;
+
+  if (isVideo) {
+    cardHTML += `
       <div class="card-info">
-        <div class="card-category">${project.categoryLabel}</div>
+        <div class="card-category">SYS.${project.category.toUpperCase()}</div>
         <h3 class="card-title">${project.title}</h3>
         <p class="card-desc">${project.desc}</p>
       </div>
-      <div class="card-footer">
-        <span class="card-badge badge-${project.badge}">${project.badgeLabel}</span>
-        <div class="card-tools">
-          ${project.tools.slice(0, 2).map(t => `<span class="card-tool-tag">${t}</span>`).join('')}
-        </div>
+    `;
+  } else {
+     cardHTML += `
+      <div class="card-info" style="padding: 12px 20px; border-top: none;">
+        <div class="card-category" style="margin: 0;">IMG.${project.category.toUpperCase()}</div>
       </div>
-      ` : ''}
-    </div>
-  `).join('');
+    `;
+  }
 
-  // Re-apply reveal animation
-  observeRevealElements();
+  cardHTML += `</div>`;
+  return cardHTML;
+}
 
-  // Card click events
-  worksGrid.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const id = parseInt(card.dataset.id);
-      openModal(id);
-    });
+function attachCardEvents(container = document) {
+  container.querySelectorAll('.project-card').forEach(card => {
+    // Avoid double attaching if re-rendering partials
+    card.removeEventListener('click', handleCardClick);
+    card.addEventListener('click', handleCardClick);
   });
 }
 
-// ── Modal ──
+function handleCardClick(e) {
+  const card = e.currentTarget;
+  const id = parseInt(card.dataset.id);
+  openModal(id);
+}
+
+// ── Modal Logic ──
 function openModal(projectId) {
   const project = projects.find(p => p.id === projectId);
   if (!project) return;
@@ -498,7 +598,7 @@ function openModal(projectId) {
     `;
   } else if (project.type === 'video') {
     mediaHTML = `
-      <div class="modal-video${verticalClass}" style="display:flex; align-items:center; justify-content:center; background: ${placeholderGradients[project.id - 1] || placeholderGradients[0]};">
+      <div class="modal-video${verticalClass}" style="display:flex; align-items:center; justify-content:center; background: ${placeholderGradients[0]};">
         <span style="font-size:3rem; opacity:0.5;">🎬</span>
       </div>
     `;
@@ -510,30 +610,20 @@ function openModal(projectId) {
     `;
   } else {
     mediaHTML = `
-      <div class="modal-video" style="display:flex; align-items:center; justify-content:center; background: ${placeholderGradients[project.id - 1] || placeholderGradients[0]}; aspect-ratio: 16/10;">
+      <div class="modal-video" style="display:flex; align-items:center; justify-content:center; background: ${placeholderGradients[0]}; aspect-ratio: 16/10;">
         <span style="font-size:3rem; opacity:0.5;">🖼️</span>
       </div>
     `;
   }
 
-  // Scene gallery (영상 프로젝트의 주요 장면 6컷)
+  // Scene gallery
   let scenesHTML = '';
   if (project.type === 'video' && project.scenes && project.scenes.length > 0) {
     scenesHTML = `
       <div class="scene-gallery">
-        <h3 class="scene-gallery-title">주요 장면</h3>
+        <h3 class="scene-gallery-title">EXTRACT.SCENES</h3>
         <div class="scene-grid${verticalClass}">
           ${project.scenes.map((scene, i) => `<img src="${scene}" alt="${project.title} - 장면 ${i + 1}">`).join('')}
-        </div>
-      </div>
-    `;
-  } else if (project.type === 'video') {
-    // Placeholder scene grid
-    scenesHTML = `
-      <div class="scene-gallery">
-        <h3 class="scene-gallery-title">주요 장면</h3>
-        <div class="scene-grid${verticalClass}">
-          ${[1,2,3,4,5,6].map(i => `<div style="background: ${placeholderGradients[(project.id + i) % placeholderGradients.length]}; aspect-ratio: ${isVertical ? '9/16' : '16/9'}; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);"></div>`).join('')}
         </div>
       </div>
     `;
@@ -541,14 +631,13 @@ function openModal(projectId) {
 
   let tagsHTML = '';
   if (project.tags && project.tags.length > 0) {
-    tagsHTML = project.tags.map(t => `<span class="card-tool-tag" style="font-size:0.78rem; padding:5px 12px;">${t}</span>`).join('');
+    tagsHTML = project.tags.map(t => `<span class="modal-tool-badge" style="border-color:var(--border-subtle); color:var(--text-main);">${t}</span>`).join('');
   }
 
   modalBody.innerHTML = `
-    <span class="modal-category">${project.categoryLabel}</span>
+    <span class="modal-category">ROOT / ${project.categoryLabel}</span>
     <h2 class="modal-title">${project.title}</h2>
     <div class="modal-badges">
-      <span class="card-badge badge-${project.badge}">${project.badgeLabel}</span>
       ${tagsHTML}
     </div>
 
@@ -558,24 +647,25 @@ function openModal(projectId) {
 
     ${project.type !== 'image' ? `
     <div class="modal-section">
-      <h3 class="modal-section-title">기획 의도</h3>
+      <h3 class="modal-section-title">PROJECT_BRIEF</h3>
       <p>${project.brief}</p>
     </div>
 
     <div class="modal-section">
-      <h3 class="modal-section-title">작업 과정</h3>
+      <h3 class="modal-section-title">WORKFLOW_ARCH</h3>
       <div class="process-timeline">
         ${project.process.map(step => `
           <div class="process-step">
             <div class="process-step-title">${step.title}</div>
             <div class="process-step-desc">${step.desc}</div>
+            ${step.image ? `<img src="${step.image}" alt="${step.title} 작업 과정" style="width: 100%; border-radius: 4px; margin-top: 10px; border: 1px solid var(--border-subtle);">` : ''}
           </div>
         `).join('')}
       </div>
     </div>
 
     <div class="modal-section">
-      <h3 class="modal-section-title">사용 AI 툴</h3>
+      <h3 class="modal-section-title">SYSTEM_REQUIRED_TOOLS</h3>
       <div class="modal-tools">
         ${project.toolsDetail.map(tool => `
           <span class="modal-tool-badge">${tool}</span>
@@ -587,55 +677,19 @@ function openModal(projectId) {
 
   modalBackdrop.classList.add('active');
   projectModal.classList.add('active');
-  document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
   modalBackdrop.classList.remove('active');
   projectModal.classList.remove('active');
-  document.body.style.overflow = '';
+  modalBody.innerHTML = '';
 }
 
 modalCloseBtn.addEventListener('click', closeModal);
 modalBackdrop.addEventListener('click', closeModal);
 
-// Close on ESC
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeModal();
 });
-
-// ── Scroll Reveal Animations ──
-function observeRevealElements() {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
-  document.querySelectorAll('.reveal:not(.visible)').forEach(el => {
-    observer.observe(el);
-  });
-}
-
-// ── Contact Form (placeholder) ──
-function handleContactSubmit(event) {
-  event.preventDefault();
-  const name = document.getElementById('name').value;
-  alert(`${name}님, 메시지가 전송되었습니다! (데모 모드)`);
-  event.target.reset();
-}
-
-// Make handleContactSubmit available globally
-window.handleContactSubmit = handleContactSubmit;
-
-// ── Initialize ──
-function init() {
-  initFilters();
-  renderProjects();
-  observeRevealElements();
-}
 
 document.addEventListener('DOMContentLoaded', init);

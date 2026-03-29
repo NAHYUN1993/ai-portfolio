@@ -3,132 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Artist Portfolio</title>
-  <meta name="description" content="AI 아티스트 포트폴리오 - AI 영상 및 AI 이미지 전문 크리에이터">
+  <title>L.NAHYUN // AI PORTFOLIO</title>
+  <meta name="description" content="AI 아티스트 포트폴리오 - AI 영상 및 이미지 기획/제작 대시보드">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- ═══ Navigation ═══ -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="#home" class="nav-logo">LEE NA HYUN</a>
-      <div class="nav-links" id="navLinks">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#works">Works</a>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  
+  <!-- CRT Scanline Overlay -->
+  <div class="scanlines"></div>
 
-  <!-- ═══ Hero Section ═══ -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <div class="hero-badge">AI Artist & Creator</div>
-      <h1>
-        Lee Na Hyun<br>
-        <span class="gradient-text">AI Artist</span>
-      </h1>
-      <p class="hero-subtitle">
-        AI 기술을 활용하여 영상과 이미지를 제작하는 크리에이터입니다.<br>
-        광고, 단편영화, 제품 홍보부터 컨셉 아트까지 — AI로 새로운 비주얼을 만듭니다.
-      </p>
-      <div class="hero-cta">
-        <a href="#works" class="btn btn-primary">작품 보기 →</a>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <div class="mouse"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
+  <!-- Global App Layout -->
+  <div class="app-container">
+    
+    <!-- ═══ Sidebar / Nav ═══ -->
+    <aside class="sidebar">
+       <div class="sidebar-header">
+           <div class="brand-box">
+             <div class="brand-accent"></div>
+             <h1>NAHYUN</h1>
+             <div class="brand-sub">AI.CREATOR_</div>
+           </div>
+       </div>
+       
+       <nav class="sidebar-nav" id="sidebarNav">
+           <button class="nav-btn active" data-view="overview">
+              <span class="nav-icon">[+]</span>
+              <span class="nav-text">OVERVIEW</span>
+           </button>
+           <button class="nav-btn" data-view="commercial">
+              <span class="nav-icon">[■]</span>
+              <span class="nav-text">COMMERCIAL</span>
+           </button>
+           <button class="nav-btn" data-view="cinematic">
+              <span class="nav-icon">[▶]</span>
+              <span class="nav-text">CINEMATICS</span>
+           </button>
+           <button class="nav-btn" data-view="artwork">
+              <span class="nav-icon">[◈]</span>
+              <span class="nav-text">ARTWORK</span>
+           </button>
+       </nav>
 
-  <!-- ═══ About Section ═══ -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">About</span>
-        <h2 class="section-title">AI 아티스트 소개</h2>
-      </div>
-      <div>
-        <div class="about-content reveal reveal-delay-1">
-          <h3>안녕하세요,<br>AI 크리에이터 이나현입니다.</h3>
-          <p>
-            방송 현장의 조연출과 자막 디자이너로 시작해, 중소기업 인하우스 영상 PD로서 자사 유튜브·인스타그램 콘텐츠의 기획부터 최종 편집까지 영상 제작 전 공정을 체득했습니다. 현재는 이 실전 경험 위에 AI 기술을 결합하여 '사람이 설계하고, AI가 확장하는' 하이브리드 크리에이티브 워크플로를 구축하고 있습니다.
-          </p>
-          <p>
-            AI 이미지·영상 생성, 자동화 파이프라인 설계, 프롬프트 엔지니어링을 핵심 역량으로 삼아 브랜드 아이덴티티에 맞는 상업적 완성도 높은 콘텐츠를 제작합니다. 특히 AI 결과물의 고질적 한계(텍스트 왜곡, 일관성 부재 등)를 기술적으로 해결하는 문제 해결형 크리에이터를 지향합니다.
-          </p>
-          <div class="about-tools">
-            <h4>주요 사용 도구</h4>
-            <div class="tools-grid">
-              <span class="tool-chip">ComfyUI</span>
-              <span class="tool-chip">Nano Banana</span>
-              <span class="tool-chip">Veo</span>
-              <span class="tool-chip">Kling</span>
-              <span class="tool-chip">Midjourney</span>
-              <span class="tool-chip">ElevenLabs</span>
-              <span class="tool-chip">Suno AI</span>
-              <span class="tool-chip">Higgsfield</span>
-              <span class="tool-chip">Antigravity</span>
-              <span class="tool-chip">Obsidian</span>
-              <span class="tool-chip">NotebookLM</span>
-              <span class="tool-chip">Claude</span>
-              <span class="tool-chip">Premiere Pro</span>
-              <span class="tool-chip">After Effects</span>
-              <span class="tool-chip">Photoshop</span>
-              <span class="tool-chip">Illustrator</span>
-              <span class="tool-chip">Figma</span>
-            </div>
+       <div class="sidebar-footer">
+          <div class="status-box">
+            <span class="status-dot"></span>
+            SYS.READY
           </div>
+          <p class="copyright">© 2026. NAHYUN<br>ALL RIGHTS RESERVED.</p>
+       </div>
+    </aside>
+
+    <!-- ═══ Main Viewport ═══ -->
+    <main class="viewport">
+       
+       <!-- V1: OVERVIEW -->
+       <section class="view-section active" id="view-overview">
+          <div class="view-header">
+             <h2>SYS.PROFILE // <span class="accent-text">OVERVIEW</span></h2>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
+          <div class="view-content">
+             <div class="profile-grid">
+               <!-- Stats / Bio -->
+               <div class="hud-panel about-panel">
+                 <div class="panel-header">
+                    <span class="panel-title">USER.BIO</span>
+                 </div>
+                 <div class="panel-body">
+                   <h3 class="glitch-text" data-text="LEE NA HYUN AI CREATOR">LEE NA HYUN <span class="title-role">AI CREATOR</span></h3>
+                   <div class="bio-text">
+                     <p>방송 현장 조연출과 인하우스 영상 PD 출신의 실전 경험을 바탕으로, AI 모델을 결합한 하이브리드 자동화 크리에이티브 워크플로를 설계합니다.</p>
+                     <p>상업적 완성도를 최우선으로 하며, '텍스트 왜곡', '일관성 부재' 등 생성형 AI 결과물의 고질적 문제를 기술적 아키텍처 및 프롬프트 제어를 통해 해결하는 시스템 기반 크리에이터입니다.</p>
+                   </div>
+                 </div>
+               </div>
 
-  <!-- ═══ Works Section ═══ -->
-  <section class="section" id="works">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Works</span>
-        <h2 class="section-title">프로젝트</h2>
-        <p class="section-desc">AI 기술로 제작한 영상과 이미지 작업물입니다.</p>
-      </div>
+               <!-- Skills / Tech Stack -->
+               <div class="hud-panel skills-panel">
+                 <div class="panel-header">
+                    <span class="panel-title">TECH.STATS</span>
+                 </div>
+                 <div class="panel-body">
+                   <div class="skill-row">
+                     <div class="skill-info">
+                       <span class="skill-name">VIDEO_GEN</span>
+                       <span class="skill-val">95%</span>
+                     </div>
+                     <div class="skill-bar"><div class="fill" style="width: 95%"></div></div>
+                     <p class="skill-sub">Kling, Veo 등 고품질 렌더링 및 모션 제어</p>
+                   </div>
+                   <div class="skill-row">
+                     <div class="skill-info">
+                       <span class="skill-name">IMG_PIPELINE</span>
+                       <span class="skill-val">90%</span>
+                     </div>
+                     <div class="skill-bar"><div class="fill" style="width: 90%"></div></div>
+                     <p class="skill-sub">ComfyUI 활용 하이브리드 자동화 프레임워크 설계</p>
+                   </div>
+                   <div class="skill-row">
+                     <div class="skill-info">
+                       <span class="skill-name">PROMPT_ENG</span>
+                       <span class="skill-val">88%</span>
+                     </div>
+                     <div class="skill-bar"><div class="fill" style="width: 88%"></div></div>
+                     <p class="skill-sub">결과 시뮬레이션 기반 디테일 네거티브/포지티브 통제</p>
+                   </div>
+                   <div class="skill-row">
+                     <div class="skill-info">
+                       <span class="skill-name">POST_PROD</span>
+                       <span class="skill-val">98%</span>
+                     </div>
+                     <div class="skill-bar"><div class="fill" style="width: 98%"></div></div>
+                     <p class="skill-sub">오디오 및 영상 마스터 믹싱 (Premiere, AE)</p>
+                   </div>
+                 </div>
+               </div>
 
-      <!-- Filter -->
-      <div class="filter-container reveal">
-        <div class="filter-main">
-          <button class="filter-btn active" data-filter="all">전체</button>
-          <button class="filter-btn" data-filter="video">🎬 AI 영상</button>
-          <button class="filter-btn" data-filter="image">🖼️ AI 이미지</button>
-        </div>
-        <div class="filter-sub" id="filterSub">
-          <!-- Dynamically populated -->
-        </div>
-      </div>
+               <!-- Quick Tools -->
+               <div class="hud-panel tools-panel">
+                 <div class="panel-header">
+                    <span class="panel-title">EQUIPPED.TOOLS</span>
+                 </div>
+                 <div class="panel-body">
+                   <div class="tool-category">
+                     <div class="tool-category-name">[GEN_AI]</div>
+                     <div class="tools-grid-hex">
+                       <span class="tool-tag">ComfyUI</span>
+                       <span class="tool-tag">Nano Banana</span>
+                       <span class="tool-tag">Kling</span>
+                       <span class="tool-tag">Veo</span>
+                       <span class="tool-tag">Midjourney</span>
+                     </div>
+                   </div>
+                   <div class="tool-category">
+                     <div class="tool-category-name">[POST_PROD]</div>
+                     <div class="tools-grid-hex">
+                       <span class="tool-tag">Premiere Pro</span>
+                       <span class="tool-tag">After Effects</span>
+                     </div>
+                   </div>
+                   <div class="tool-category">
+                     <div class="tool-category-name">[IMG_EDIT]</div>
+                     <div class="tools-grid-hex">
+                       <span class="tool-tag">Photoshop</span>
+                     </div>
+                   </div>
+                   <div class="tool-category">
+                     <div class="tool-category-name">[AI_AGENT]</div>
+                     <div class="tools-grid-hex">
+                       <span class="tool-tag">Antigravity</span>
+                       <span class="tool-tag">Claude</span>
+                       <span class="tool-tag">NotebookLM</span>
+                       <span class="tool-tag">ElevenLabs</span>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+          </div>
+       </section>
 
-      <!-- Works Grid -->
-      <div class="works-grid" id="worksGrid">
-        <!-- Dynamically populated -->
-      </div>
-    </div>
-  </section>
+       <!-- V2: COMMERCIAL -->
+       <section class="view-section" id="view-commercial">
+          <div class="view-header">
+             <h2>COMM.DB // <span class="accent-text">COMMERCIAL</span></h2>
+             <p class="view-desc">제품 홍보, 커머스 콘텐츠, 브랜드 대상 광고 영상 에셋</p>
+          </div>
+          <div class="view-content">
+             <div class="works-grid" id="grid-commercial"></div>
+          </div>
+       </section>
 
-  <!-- ═══ Footer ═══ -->
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-text">© 2026 <a href="#home">Lee Na Hyun</a>. All rights reserved.</p>
-    </div>
-  </footer>
+       <!-- V3: CINEMATIC -->
+       <section class="view-section" id="view-cinematic">
+          <div class="view-header">
+             <h2>CINE.DB // <span class="accent-text">CINEMATICS</span></h2>
+             <p class="view-desc">단편 영화, 단편 애니메이션, 스토리보드 기반 기획 영상</p>
+          </div>
+          <div class="view-content">
+             <div class="works-grid" id="grid-cinematic"></div>
+          </div>
+       </section>
 
-  <!-- ═══ Project Modal ═══ -->
+       <!-- V4: ARTWORK -->
+       <section class="view-section" id="view-artwork">
+          <div class="view-header">
+             <h2>IMG.DB // <span class="accent-text">ARTWORK</span></h2>
+             <p class="view-desc">캐릭터 일관성 도출, 컨셉 아트 도출, 패키지 정밀 오버레이 테스트</p>
+             <div class="filter-main">
+                <button class="filter-chip active" data-sub="all-image">[ALL]</button>
+                <button class="filter-chip" data-sub="character">[CHARACTER]</button>
+                <button class="filter-chip" data-sub="concept-art">[CONCEPT]</button>
+                <button class="filter-chip" data-sub="portrait">[PORTRAIT]</button>
+                <button class="filter-chip" data-sub="product-image">[PRODUCT]</button>
+             </div>
+          </div>
+          <div class="view-content">
+             <div class="works-grid" id="grid-artwork"></div>
+          </div>
+       </section>
+    </main>
+  </div>
+
+  <!-- ═══ Global Project Modal ═══ -->
   <div class="modal-backdrop" id="modalBackdrop"></div>
-  <div class="modal" id="projectModal">
+  <div class="modal hud-modal" id="projectModal">
+    <div class="modal-decoration top-left"></div>
+    <div class="modal-decoration top-right"></div>
+    <div class="modal-decoration bottom-left"></div>
+    <div class="modal-decoration bottom-right"></div>
     <div class="modal-close">
-      <button class="modal-close-btn" id="modalCloseBtn" aria-label="닫기">✕</button>
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="닫기">[ CLOSE_WIN ]</button>
     </div>
     <div class="modal-body" id="modalBody">
       <!-- Dynamically populated -->
