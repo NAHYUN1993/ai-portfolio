@@ -322,7 +322,7 @@ const characterFiles = [
   "dan_asa_httpss.mj.runHGcqPQ1_YV8_A_wide_shot_of_the_marshmall_21f55a88-a9f5-4e15-87c3-cb6ebaafa71a_0.png",
   "dan_asa_httpss.mj.runV9AU0mxRykw_A_close-up_portrait_of_a_cut_95f1374d-2bea-4cec-8d51-059f63c66e8e_2.png",
   "dan_asa_httpss.mj.runzw9cHaC2uWE_A_low_angle_shot_of_the_mars_672b6280-32ad-437f-a071-fafba61e8131_0.png",
-  "dan_asa_lose-up_of_an_old_90s_retro_handheld_virtual_pet_devi_bda324f8-ec5b-4706-b07a-b4348730e407_1.png"
+  "추가01.png"
 ];
 
 const conceptArtFiles = [
