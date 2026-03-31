@@ -233,12 +233,12 @@ const projects = [
     driveId: '1UionJ84Kyz9OjvfQot6yiUt0piYegRUt',
     orientation: 'horizontal',
     scenes: [
-      'images/주요장면/나노바나나/%234.png',
-      'images/주요장면/나노바나나/%235.png',
-      'images/주요장면/나노바나나/%236.png',
-      'images/주요장면/나노바나나/%237.png',
-      'images/주요장면/나노바나나/%238.png',
-      'images/주요장면/나노바나나/바나나.png'
+      'images/주요장면/나노바나나/바나나01.png',
+      'images/주요장면/나노바나나/바나나02.png',
+      'images/주요장면/나노바나나/바나나03.png',
+      'images/주요장면/나노바나나/바나나04.png',
+      'images/주요장면/나노바나나/바나나05.png',
+      'images/주요장면/나노바나나/바나나06.png'
     ],
     tags: ['커머스', '기술 시연'],
     brief: '초고성능 인공지능 이미지 생성 기술인 \'나노바나나\'의 압도적인 스타일 베리에이션 능력을 직관적으로 증명하기 위한 테크 커머셜 필름. 바나나를 핵심 오브제로 고정하고, 이를 중심으로 인공지능이 구현할 수 있는 무한한 화풍의 변환 과정을 속도감 있게 보여주어 기술의 혁신성과 상업적 활용 가치를 어필함.',
@@ -289,12 +289,12 @@ const projects = [
     driveId: '11i8xV-new7gxnxQ571zmbRbqTqm3P1Lf',
     orientation: 'horizontal',
     scenes: [
-      'images/주요장면/아마존/%2311.png',
-      'images/주요장면/아마존/%2313.png',
-      'images/주요장면/아마존/%2315.png',
-      'images/주요장면/아마존/%234.png',
-      'images/주요장면/아마존/%235.png',
-      'images/주요장면/아마존/%239.png'
+      'images/주요장면/아마존/아마존01.png',
+      'images/주요장면/아마존/아마존02.png',
+      'images/주요장면/아마존/아마존03.png',
+      'images/주요장면/아마존/아마존04.png',
+      'images/주요장면/아마존/아마존05.png',
+      'images/주요장면/아마존/아마존06.png'
     ],
     tags: ['SF', '디스토피아', '시네마틱'],
     brief: '기후 위기로 인해 얼어붙어버린 \'아마존\'이라는 디스토피아적 세계관과, 인류 생존의 열쇠인 \'코어\'를 고치기 위한 여정, 그리고 이것이 모두 시뮬레이션이었다는 극적 반전을 담은 단편 영화 기획. 텍스트 프롬프트만으로 압도적인 스케일의 시네마틱 룩을 구현함.',
